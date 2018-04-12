@@ -1,9 +1,9 @@
 import math
 
+hours_ =  5
 def isRtAngled(a, b, c):
     list = [a, b, c]
     list.sort(key=int)
-    print(list)
     x = list[0]
     y = list[1]
     z = list[2]
