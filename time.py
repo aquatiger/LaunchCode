@@ -28,19 +28,28 @@ time = int(input("Please enter the number of seconds you want to convert to minu
 seconds = time % 60
 minutes = time // 60
 hours = minutes // 60
-minutes = hours % 60
+minutes = minutes % 60
 days = hours // 24
-hours = days % 24
+hours = hours % 24
 months = days // 30
+days = days % 30
+years = months // 12
+months = months % 12
+centuries = years // 100
+years = years % 100
+millennia = centuries // 10
+centuries = centuries % 10
 
 
 
 
 ##months = days // 30
 ##years = days // 365
-##print(time, "seconds is: ")
-##print(years, "year(s) (assuming a 365 day year)")
-##print(months, "month(s) (assuming a 30 day month)")
+print(time, "seconds is: ")
+print(millennia, "millennium(ia)")
+print(centuries, "century(ies)")
+print(years, "year(s) (assuming a 365 day year)")
+print(months, "month(s) (assuming a 30 day month)")
 print(days, "day(s)")
 print(hours, "hour(s)")
 print(minutes, "minute(s)")
