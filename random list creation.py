@@ -8,9 +8,18 @@ Write a function called average that will take the list as a parameter and retur
 import random
 
 listing = []
-number = random.range(1000)
 
-for i in number:
-    listing.append()
-
+for i in range(100):
+    listing.append(random.randint(0, 1000))
 print(listing)
+
+
+def average():
+    sum = 0
+    for i in listing:
+        sum += i
+        result = sum / len(listing)
+    print(len(listing))
+    print(result)
+
+average()
