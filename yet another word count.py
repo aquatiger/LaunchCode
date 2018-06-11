@@ -2,7 +2,7 @@
 remove punctuation (done)
 count words in a file (done)
 find length of longest word
-use dictionary for word count of each word in alphabetical order
+use dictionary for word count of each word in alphabetical order (done)
 
 """
 
