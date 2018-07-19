@@ -13,10 +13,14 @@ for i in range(1, 10):
     for j in range(1, 10):
         if i < j:
             x = i/j
-            fractions.append((x, i, j))
+            if x not in fractions:
+                fractions.append((x, i, j))
     sortedFrac =  sorted(fractions)
 
 print(sortedFrac)
+
+for i in range(len(fractions)):
+    print(sortedFrac[i][0])
 
 ##newFrac = []
 ##
