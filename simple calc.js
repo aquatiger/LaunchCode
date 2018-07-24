@@ -8,13 +8,17 @@
 <button onclick="subtracter()">Subtract</button>
 <button onclick="multiplier()">Multiply</button>
 <button onclick="divider()">Divide</button>
-</body>
-<script>
+<script type="text/javascript">
   adder = function() {
     firstInput = document.getElementById("first").value
     secondInput = document.getElementById("second").value
     total = +firstInput + +secondInput
     alert(total)
+    para = document.querySelector("p")
+    contents = document.createTextNode(total)
+    para.appendChild(contents)
+    element = document.getElementById("p")
+    element.appendChild(para)
   }
   subtracter = function() {
     firstInput = document.getElementById("first").value
@@ -35,5 +39,5 @@
     alert(total)
   }
 </script>
-
+</body>
 </html>
