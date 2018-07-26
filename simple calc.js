@@ -1,5 +1,3 @@
-//can only get the total to "print" in the alert, not console.log
-
 <html>
   <body>
   <input id="first" type="number"></input>
@@ -8,35 +6,43 @@
 <button onclick="subtracter()">Subtract</button>
 <button onclick="multiplier()">Multiply</button>
 <button onclick="divider()">Divide</button>
+<h3><br/></h3>
 <script type="text/javascript">
   adder = function() {
     firstInput = document.getElementById("first").value
     secondInput = document.getElementById("second").value
     total = +firstInput + +secondInput
-    alert(total)
-    para = document.querySelector("p")
+    element = document.querySelector("h3")
+    para = document.createElement("h3")
     contents = document.createTextNode(total)
-    para.appendChild(contents)
-    element = document.getElementById("p")
-    element.appendChild(para)
+    element.appendChild(contents)
   }
   subtracter = function() {
     firstInput = document.getElementById("first").value
     secondInput = document.getElementById("second").value
     total = +firstInput - +secondInput
-    alert(total)
+    element = document.querySelector("h3")
+    para = document.createElement("h3")
+    contents = document.createTextNode(total)
+    element.appendChild(contents)
   }
   multiplier = function() {
     firstInput = document.getElementById("first").value
     secondInput = document.getElementById("second").value
     total = +firstInput * +secondInput
-    alert(total)
+    element = document.querySelector("h3")
+    para = document.createElement("h3")
+    contents = document.createTextNode(total)
+    element.appendChild(contents)
   }
   divider = function() {
     firstInput = document.getElementById("first").value
     secondInput = document.getElementById("second").value
     total = +firstInput / +secondInput
-    alert(total)
+    element = document.querySelector("h3")
+    para = document.createElement("h3")
+    contents = document.createTextNode(total)
+    element.appendChild(contents)
   }
 </script>
 </body>
