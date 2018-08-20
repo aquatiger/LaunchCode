@@ -3,10 +3,9 @@ Try to return the closest fraction to a float
 partially pseudocode
 
 """
-numerator = input("Please enter the top or first number you want to divide: ")
-denominator = input("Please enter the bottom or second number you want to divide: ")
+numerator = int(input("Please enter the top or first number you want to divide: "))
+denominator = int(input("Please enter the bottom or second number you want to divide: "))
 divided = numerator / denominator
-print(divided)
 
 fractions = {}
 
@@ -25,12 +24,11 @@ print(frackey)
 ranges = []
 
 for i in range(len(frackey)):
-# not sure if I need variables a,c
     a = frackey[i-1]
     b = frackey[i] # b is the same as one of the keys in fractions
     c = frackey[i+1]
 
-    y = abs(((b-a)/2) - b)
+    y = (b - ((b-a)/2))
     z = ((c-b)/2) + b
     ranges.append((b, y, z))
     print(ranges)
