@@ -42,10 +42,12 @@ for i in range(len(ranges)):
         print("Your number", numerator, "/", denominator, "is approximately 0")
         break
     elif divided > ranges[i][1] and divided < ranges[i][2]:
-        print("Your number %d/%d is approximately %d/%d" (numerator, denominator)) #, fractions[ranges[i][0]][0], fractions[ranges[i][0]][1]))
         print("Your number  " + str(numerator) + "/" + str(denominator) + "  is approximately  " + str(fractions[ranges[i][0]][0]) + "/" + str(fractions[ranges[i][0]][1]))
         print("Your number ",  numerator, "/",  denominator, " is approximately ", fractions[ranges[i][0]][0], "/", fractions[ranges[i][0]][1])
-    elif divided > ranges[-1][2]:
+    elif divided > ranges[-1][2] and divided <=1:
         print("Your number", numerator, "/", denominator, "is approximately 1")
         break
+    elif divided > 1:
+        #bigger = 
+        pass
 
