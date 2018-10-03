@@ -4,7 +4,9 @@ Try to return the closest fraction to a float
 """
 numerator = int(input("Please enter the top or first number you want to divide: "))
 denominator = int(input("Please enter the bottom or second number you want to divide: "))
-divided = numerator / denominator
+divided = numerator // denominator
+wholeDivided = (numerator / denominator) - divided
+print(wholeDivided)
 
 fractions = {}
 
@@ -48,6 +50,7 @@ for i in range(len(ranges)):
         print("Your number", numerator, "/", denominator, "is approximately 1")
         break
     elif divided > 1:
-        #bigger = 
+        #bigger = numerator // denominator
+        # floatOfBigger = numerator % denominator
         pass
 
