@@ -7,6 +7,7 @@ denominator = int(input("Please enter the bottom or second number you want to di
 divided = numerator // denominator
 wholeDivided = (numerator / denominator) - divided
 print(wholeDivided)
+print(divided)
 
 fractions = {}
 
